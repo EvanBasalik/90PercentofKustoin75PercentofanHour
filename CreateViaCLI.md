@@ -62,7 +62,7 @@ If the result contains `provisioningState` with the `Succeeded` value, then the 
 1. Run the following command to see the database that you created:
 
     ```azurecli-interactive
-    az kusto database show --database-name cxpdolkql --resource-group 90PercentofKustoin75PercentofanHour --cluster-name cxpdolkql
+    az kusto database show --database-name cxpdolkql --resource-group 90PercentofKustoin75PercentofanHour --cluster-name cxpdolkql<youralias>
     ```
 
 You now have a cluster and a database.
