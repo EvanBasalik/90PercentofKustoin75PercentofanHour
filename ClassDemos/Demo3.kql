@@ -1,4 +1,4 @@
-//Where, ago, comments, print
+//Where, ago, comments, print, order by
 StormEvents
 | project StartTime, EndTime, EpisodeId, EpisodeNarrative
 | where StartTime > todatetime("2007-12-25")
@@ -7,5 +7,6 @@ StormEvents
 | project StartTime, EndTime, EpisodeId, EpisodeNarrative
 //| where StartTime > todatetime("2007-12-25")
 | where StartTime > ago(5475d)  //2007-05-15
+| order by StateTime asc
 
 print ago(5475d)
