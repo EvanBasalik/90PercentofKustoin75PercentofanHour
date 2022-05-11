@@ -1,0 +1,8 @@
+//Take
+StormEvents
+| take 10 
+
+//Take, Project
+StormEvents
+| project StartTime, EndTime, EpisodeId, EpisodeNarrative
+| take 10 

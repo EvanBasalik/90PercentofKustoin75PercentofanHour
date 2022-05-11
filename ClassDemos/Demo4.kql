@@ -1,0 +1,6 @@
+//extend + iff
+StormEvents
+//| take 10
+| project StartTime, EndTime, State
+| extend StatetoEvan = iif(State=~"NORTH CAROLINA" or State =~ "SOUTH CAROLINA", "Carolinas", "Elsewhere")
+| where StatetoEvan =~ "Carolinas"

@@ -1,0 +1,10 @@
+//Let
+let KeyStates=dynamic([
+    "North Carolina",
+    "South Carolina"
+]);
+StormEvents
+| project StartTime, EndTime, State
+| extend StatetoEvan = iif(State in~(KeyStates), "ImportantStates", "Elsewhere")
+| where StatetoEvan == "ImportantStates"
+| summarize count()

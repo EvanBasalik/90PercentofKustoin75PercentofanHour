@@ -1,0 +1,11 @@
+//Where, ago, comments, print
+StormEvents
+| project StartTime, EndTime, EpisodeId, EpisodeNarrative
+| where StartTime > todatetime("2007-12-25")
+
+StormEvents
+| project StartTime, EndTime, EpisodeId, EpisodeNarrative
+//| where StartTime > todatetime("2007-12-25")
+| where StartTime > ago(5475d)  //2007-05-15
+
+print ago(5475d)
