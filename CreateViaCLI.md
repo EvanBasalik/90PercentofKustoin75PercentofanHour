@@ -1,4 +1,4 @@
-<h1>Please run this script the day before because it takes ~15 min to create the cluster and database!!!!</h1>
+<h1>Please run this script before your sessions because it takes ~15 min to create the cluster and database!!!!</h1>
 
 These steps are a modified version of what can be found at https://docs.microsoft.com/en-us/azure/data-explorer/create-cluster-database-cli.
 
