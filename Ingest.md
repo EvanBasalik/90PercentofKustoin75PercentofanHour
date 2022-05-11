@@ -2,8 +2,8 @@
 
 1. Open the URL for the web browswer UI for Data Explorer: 
 
-https://dataexplorer.azure.com/clusters/cxpdolkql\<youralias\>.\<yourregion\> 
-(be sure to use the cluster name and region you used when creating your instance)
+"https://dataexplorer.azure.com/clusters/cxpdolkql<youralias\>.<yourregion\>/databases/cxpdolkql"
+**(be sure to use the full cluster name and region you used when creating your instance)**
 
 1. Expand the tree in the left-hand pane so you can see your database:
 
@@ -29,7 +29,7 @@ https://dataexplorer.azure.com/clusters/cxpdolkql\<youralias\>.\<yourregion\>
     | take 10
     ```
 
-    The query returns the following results from the ingested sample data.
+    The query should return the following results from the ingested sample data:
 
     ![snippet of results](https://docs.microsoft.com/en-us/azure/data-explorer/media/ingest-sample-data/query-results.png "Snippet of top 10 results")
 
