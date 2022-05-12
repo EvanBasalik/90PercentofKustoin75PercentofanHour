@@ -6,7 +6,9 @@ StormEvents
 StormEvents
 | project StartTime, EndTime, EpisodeId, EpisodeNarrative
 //| where StartTime > todatetime("2007-12-25")
-| where StartTime > ago(5475d)  //2007-05-15
-| order by StateTime asc
+| where StartTime > ago(5475d)  //2007-05-15 -> at least on 2022-05-10!!!! :) 
+| order by StartTime asc
 
-print ago(5475d)
+//how to figure out the right ago value?
+print now() - todatetime("2007-05-15");
+print ago(now() - todatetime("2007-05-15"))

@@ -16,8 +16,8 @@ StormEvents
 //| take 10
 | project StartTime, EndTime, State
 | extend StatetoEvan = iif(State=~"NORTH CAROLINA" or State =~ "SOUTH CAROLINA", "Carolinas", "Elsewhere")
-//| summarize count() by bin(StartTime,1d) //show count per day
-| summarize count() by bin(StartTime,1h) //show count per hour
+| summarize count() by bin(StartTime,1d) //show count per day
+//| summarize count() by bin(StartTime,1h) //show count per hour
 | render timechart 
 
 StormEvents
