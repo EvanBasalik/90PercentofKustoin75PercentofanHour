@@ -1,0 +1,6 @@
+HttpIncomingRequests
+| where PreciseTimeStamp >= ago(30d)
+| where httpStatusCode == "200"  //only show successful calls
+| where httpMethod != "GET"  //filter out GET calls - shouldn't affect the trend, but reduces data pull
+| summarize count() by bin(PreciseTimeStamp, 1d)  //aggregate at the scale of one day
+| render timechart 
