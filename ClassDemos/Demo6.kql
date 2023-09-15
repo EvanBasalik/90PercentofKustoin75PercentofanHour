@@ -8,3 +8,5 @@ StormEvents
 | extend StatetoEvan = iif(State in~(KeyStates), "ImportantStates", "Elsewhere")
 | where StatetoEvan == "ImportantStates"
 | summarize count()
+
+//show how to share query
